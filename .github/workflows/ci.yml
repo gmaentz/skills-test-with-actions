@@ -26,5 +26,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run markdown lint
         run: |
+          npm help
           npm install remark-cli remark-preset-lint-consistent
-          npm remark . --use remark-preset-lint-consistent --frail
+          npx remark . --use remark-preset-lint-consistent --frail
